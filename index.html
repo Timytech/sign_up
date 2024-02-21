@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up <Form></Form></title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="left_shade"><h1>ODIN</h1></div>
+            <div class="footer">
+                <p id="credit">
+                    Photo by <a target="_blank" href="https://unsplash.com/@lgnwvr?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">LOGAN WEAVER | @LGNWVR</a> on <a target="_blank" href="https://unsplash.com/photos/a-man-dunking-a-basketball-in-front-of-a-crowd-khx1_ltFGb4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="right">
+            <header>
+                <h2>
+                    This is not a real online service! It's just a demo sign-up form. Your data is not stored in any database.
+                </h2>
+            </header>
+
+            <div class="middle">
+                <h4>Fill this form to sign-up for the next basketball training session</h4>
+
+                <form action="./">
+                    <div class="form_row">
+                        <label for="firstname">FIRST NAME</label>
+                        <input type="text" id="firstname" name="firstname" required />
+                    </div>
+
+                    <div class="form_row">
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" id="lastname" name="lastname" required />
+                    </div>
+
+                    <div class="form_row">
+                        <label for="mail">EMAIL</label>
+                        <input type="email" autocomplete="email" id="mail" name="mail" required />
+                    </div>
+
+                    <div class="form_row">
+                        <label for="tel">PHONE NUMBER</label>
+                        <input type="tel" autocomplete="tel" id="tel" name="tel" />
+                    </div>
+
+                    <div class="form_row">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" required />
+                    </div>
+
+                    <div class="form_row">
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm_password" name="confirm_password" required />
+                        <p id="password_error_message"></p>
+                    </div>
+
+                    <div>
+                        <button id="submit" type="submit">Create Account</button>
+                        <h3>Already have an account? <a target="_blank" href="https://www.google.com/">Log in</a></h3>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
